@@ -1,0 +1,20 @@
+[package]
+name = "mintaka-log"
+version = "0.0.5"
+description = "Mintaka Log"
+repository = "https://github.com/Tribufu/Mintaka"
+authors = ["Tribufu <contact@tribufu.com>"]
+license = "MIT"
+edition = "2021"
+publish = true
+
+[lib]
+name = "mintaka_log"
+crate-type = ["rlib"]
+path = "lib.rs"
+
+[dependencies]
+chrono = "0.4.23"
+env_logger = "0.10.1"
+log = "0.4"
+serde = { version = "1.0", features = ["derive"] }

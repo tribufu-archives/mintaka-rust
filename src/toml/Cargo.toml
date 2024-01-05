@@ -1,0 +1,18 @@
+[package]
+name = "mintaka-toml"
+version = "0.0.4"
+description = "Mintaka TOML"
+repository = "https://github.com/Tribufu/Mintaka"
+authors = ["Tribufu <contact@tribufu.com>"]
+license = "MIT"
+edition = "2021"
+publish = true
+
+[lib]
+name = "mintaka_toml"
+crate-type = ["rlib"]
+path = "lib.rs"
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+toml = "0.8.0"

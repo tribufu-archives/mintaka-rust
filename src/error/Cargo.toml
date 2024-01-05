@@ -1,0 +1,18 @@
+[package]
+name = "mintaka-error"
+version = "0.0.1"
+description = "Mintaka Error"
+repository = "https://github.com/Tribufu/Mintaka"
+authors = ["Tribufu <contact@tribufu.com>"]
+license = "MIT"
+edition = "2021"
+publish = true
+
+[lib]
+name = "mintaka_error"
+crate-type = ["rlib"]
+path = "lib.rs"
+
+[dependencies]
+anyhow = "1.0.44"
+thiserror = "1.0.26"

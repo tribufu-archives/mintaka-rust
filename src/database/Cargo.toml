@@ -1,0 +1,47 @@
+[package]
+name = "mintaka-database"
+version = "0.0.4"
+description = "Mintaka Database"
+repository = "https://github.com/Tribufu/Mintaka"
+authors = ["Tribufu <contact@tribufu.com>"]
+license = "MIT"
+edition = "2021"
+publish = true
+
+[lib]
+name = "mintaka_database"
+crate-type = ["rlib"]
+path = "lib.rs"
+
+[dependencies]
+async-trait = "0.1.74"
+derive_more = {version = "0.99.17", features = ["from"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_with = "3"
+strum_macros = "0.25"
+sqlx = { version = "0.7.1", features = [
+    "all-databases",
+    "chrono",
+    "json",
+    "macros",
+    "runtime-tokio-rustls",
+    "rust_decimal",
+    "uuid",
+] }
+sea-query = { version = "0.30.3", features = [
+    "with-chrono",
+    "with-json",
+    "with-rust_decimal",
+    "with-uuid",
+] }
+sea-query-binder = { version = "0.5", features = [
+    "sqlx-any",
+    "sqlx-mysql",
+    "sqlx-postgres",
+    "sqlx-postgres",
+    "sqlx-sqlite",
+    "with-chrono",
+    "with-json",
+    "with-rust_decimal",
+    "with-uuid",
+] }

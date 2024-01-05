@@ -1,0 +1,16 @@
+[package]
+name = "mintaka-macros"
+version = "0.0.4"
+description = "Mintaka Macros"
+repository = "https://github.com/Tribufu/Mintaka"
+authors = ["Tribufu <contact@tribufu.com>"]
+license = "MIT"
+edition = "2021"
+publish = true
+
+[lib]
+name = "mintaka_macros"
+crate-type = ["rlib"]
+path = "lib.rs"
+
+[dependencies]

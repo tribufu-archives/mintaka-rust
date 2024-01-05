@@ -1,0 +1,18 @@
+[package]
+name = "mintaka-yaml"
+version = "0.0.4"
+description = "Mintaka YAML"
+repository = "https://github.com/Tribufu/Mintaka"
+authors = ["Tribufu <contact@tribufu.com>"]
+license = "MIT"
+edition = "2021"
+publish = true
+
+[lib]
+name = "mintaka_yaml"
+crate-type = ["rlib"]
+path = "lib.rs"
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_yaml = "0.9.25"
