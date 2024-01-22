@@ -1,4 +1,5 @@
 // Copyright (c) Tribufu. All Rights Reserved.
+// SPDX-License-Identifier: MIT
 
 use async_trait::async_trait;
 use sea_query::{

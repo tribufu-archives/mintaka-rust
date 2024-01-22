@@ -1,4 +1,5 @@
 // Copyright (c) Tribufu. All Rights Reserved.
+// SPDX-License-Identifier: MIT
 
 pub use quick_xml::de::from_str;
 pub use quick_xml::se::to_string;

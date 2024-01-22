@@ -1,4 +1,5 @@
 // Copyright (c) Tribufu. All Rights Reserved.
+// SPDX-License-Identifier: MIT
 
 pub use toml::from_str;
 pub use toml::to_string;

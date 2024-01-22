@@ -1,4 +1,5 @@
 // Copyright (c) Tribufu. All Rights Reserved.
+// SPDX-License-Identifier: MIT
 
 pub use crate::log;
 pub use crate::types::arch::DeviceArch;

@@ -1,4 +1,5 @@
 // Copyright (c) Tribufu. All Rights Reserved.
+// SPDX-License-Identifier: MIT
 
 pub use ron::de::from_str;
 pub use ron::ser::to_string;

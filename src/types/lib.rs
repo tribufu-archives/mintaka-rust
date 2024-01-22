@@ -1,4 +1,5 @@
 // Copyright (c) Tribufu. All Rights Reserved.
+// SPDX-License-Identifier: MIT
 
 pub use type_uuid::TypeUuid;
 pub use type_uuid::TypeUuidDynamic;

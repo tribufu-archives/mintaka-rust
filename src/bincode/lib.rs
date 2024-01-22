@@ -1,4 +1,5 @@
 // Copyright (c) Tribufu. All Rights Reserved.
+// SPDX-License-Identifier: MIT
 
 pub use bincode::deserialize as from_bytes;
 pub use bincode::serialize as to_bytes;

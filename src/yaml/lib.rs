@@ -1,4 +1,5 @@
 // Copyright (c) Tribufu. All Rights Reserved.
+// SPDX-License-Identifier: MIT
 
 pub use serde_yaml::from_slice;
 pub use serde_yaml::from_str;

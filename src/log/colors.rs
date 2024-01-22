@@ -1,4 +1,5 @@
 // Copyright (c) Tribufu. All Rights Reserved.
+// SPDX-License-Identifier: MIT
 
 pub const BLACK: u8 = 0;
 pub const RED: u8 = 1;

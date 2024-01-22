@@ -1,4 +1,5 @@
 // Copyright (c) Tribufu. All Rights Reserved.
+// SPDX-License-Identifier: MIT
 
 /// The version of the framework.
 pub const MINTAKA_VERSION: &'static str = env!("CARGO_PKG_VERSION");
