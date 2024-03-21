@@ -1,6 +1,6 @@
 [package]
 name = "mintaka-log"
-version = "0.0.0"
+version = "0.0.5"
 description = "Mintaka Log"
 repository = "https://github.com/Tribufu/Mintaka"
 authors = ["Tribufu <contact@tribufu.com>"]
@@ -13,7 +13,7 @@ crate-type = ["rlib"]
 path = "lib.rs"
 
 [dependencies]
-mintaka-error = { path = "../error" }
+mintaka-error = { version = "0.0.5", path = "../error" }
 chrono = "0.4.23"
 env_logger = "0.10.1"
 log = "0.4"

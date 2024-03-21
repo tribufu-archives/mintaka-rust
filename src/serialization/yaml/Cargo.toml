@@ -1,6 +1,6 @@
 [package]
 name = "mintaka-yaml"
-version = "0.0.0"
+version = "0.0.5"
 description = "Mintaka Yaml"
 repository = "https://github.com/Tribufu/Mintaka"
 authors = ["Tribufu <contact@tribufu.com>"]

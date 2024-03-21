@@ -1,6 +1,6 @@
 [package]
 name = "mintaka-types"
-version = "0.0.0"
+version = "0.0.5"
 description = "Mintaka Types"
 repository = "https://github.com/Tribufu/Mintaka"
 authors = ["Tribufu <contact@tribufu.com>"]
@@ -13,7 +13,7 @@ crate-type = ["rlib"]
 path = "lib.rs"
 
 [dependencies]
-mintaka-constants = { path = "../constants" }
+mintaka-constants = { version = "0.0.5", path = "../constants" }
 serde = { version = "1.0", features = ["derive"] }
 type-uuid = "0.1.2"
 uuid = { version = "1.1.1", features = ["serde", "v1", "v3", "v4", "v5", "v6", "v7", "v8"] }

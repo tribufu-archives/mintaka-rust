@@ -1,6 +1,6 @@
 [package]
 name = "mintaka-ron"
-version = "0.0.0"
+version = "0.0.5"
 description = "Mintaka Ron"
 repository = "https://github.com/Tribufu/Mintaka"
 authors = ["Tribufu <contact@tribufu.com>"]

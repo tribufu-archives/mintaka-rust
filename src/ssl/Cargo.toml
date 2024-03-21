@@ -1,6 +1,6 @@
 [package]
 name = "mintaka-ssl"
-version = "0.0.0"
+version = "0.0.5"
 description = "Mintaka SSL"
 repository = "https://github.com/Tribufu/Mintaka"
 authors = ["Tribufu <contact@tribufu.com>"]
@@ -13,6 +13,6 @@ crate-type = ["rlib"]
 path = "lib.rs"
 
 [dependencies]
-mintaka-error = { path = "../error" }
+mintaka-error = { version = "0.0.5", path = "../error" }
 rustls = "0.20"
 rustls-pemfile = "1"

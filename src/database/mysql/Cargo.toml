@@ -1,6 +1,6 @@
 [package]
 name = "mintaka-mysql"
-version = "0.0.0"
+version = "0.0.5"
 description = "Mintaka Mysql"
 repository = "https://github.com/Tribufu/Mintaka"
 authors = ["Tribufu <contact@tribufu.com>"]

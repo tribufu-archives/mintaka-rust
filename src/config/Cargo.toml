@@ -1,6 +1,6 @@
 [package]
 name = "mintaka-config"
-version = "0.0.0"
+version = "0.0.5"
 description = "Mintaka Config"
 repository = "https://github.com/Tribufu/Mintaka"
 authors = ["Tribufu <contact@tribufu.com>"]
@@ -13,7 +13,7 @@ crate-type = ["rlib"]
 path = "lib.rs"
 
 [dependencies]
-mintaka-toml = { path = "../serialization/toml" }
-mintaka-derive = { path = "../derive" }
-mintaka-error = { path = "../error" }
+mintaka-toml = { version = "0.0.5", path = "../serialization/toml" }
+mintaka-derive = { version = "0.0.5", path = "../derive" }
+mintaka-error = { version = "0.0.5", path = "../error" }
 serde = { version = "1.0", features = ["derive"] }

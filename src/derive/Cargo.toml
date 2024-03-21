@@ -1,6 +1,6 @@
 [package]
 name = "mintaka-derive"
-version = "0.0.0"
+version = "0.0.5"
 description = "Mintaka Derive"
 repository = "https://github.com/Tribufu/Mintaka"
 authors = ["Tribufu <contact@Tribufu.com>"]

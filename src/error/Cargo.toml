@@ -1,6 +1,6 @@
 [package]
 name = "mintaka-error"
-version = "0.0.0"
+version = "0.0.5"
 description = "Mintaka Error"
 repository = "https://github.com/Tribufu/Mintaka"
 authors = ["Tribufu <contact@tribufu.com>"]

@@ -1,6 +1,6 @@
 [package]
 name = "mintaka-database"
-version = "0.0.0"
+version = "0.0.5"
 description = "Mintaka Database"
 repository = "https://github.com/Tribufu/Mintaka"
 authors = ["Tribufu <contact@tribufu.com>"]
@@ -28,8 +28,8 @@ sea-query = [
 ]
 
 [dependencies]
-mintaka-config = { path = "../config" }
-mintaka-error = { path = "../error" }
+mintaka-config = { version = "0.0.5", path = "../config" }
+mintaka-error = { version = "0.0.5", path = "../error" }
 serde = { version = "1.0", features = ["derive"] }
 sqlx = { version = "0.7.1", features = [
     "all-databases",
@@ -57,7 +57,7 @@ sea-query-binder = { version = "0.5", features = [
     "with-uuid",
 ], optional = true }
 
-mintaka-mysql = { path = "./mysql", optional = true }
-mintaka-postgres = { path = "./postgres", optional = true }
-mintaka-redis = { path = "./redis", optional = true }
-mintaka-sqlite = { path = "./sqlite", optional = true }
+mintaka-mysql = { version = "0.0.5", path = "./mysql", optional = true }
+mintaka-postgres = { version = "0.0.5", path = "./postgres", optional = true }
+mintaka-redis = { version = "0.0.5", path = "./redis", optional = true }
+mintaka-sqlite = { version = "0.0.5", path = "./sqlite", optional = true }

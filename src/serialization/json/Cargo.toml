@@ -1,6 +1,6 @@
 [package]
 name = "mintaka-json"
-version = "0.0.0"
+version = "0.0.5"
 description = "Mintaka Json"
 repository = "https://github.com/Tribufu/Mintaka"
 authors = ["Tribufu <contact@tribufu.com>"]
@@ -13,6 +13,6 @@ crate-type = ["rlib"]
 path = "lib.rs"
 
 [dependencies]
-mintaka-error = { path = "../../error" }
+mintaka-error = { version = "0.0.5", path = "../../error" }
 serde = { version = "1.0", features = ["derive"] }
 serde_json = "1.0"

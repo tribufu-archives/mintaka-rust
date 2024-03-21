@@ -1,6 +1,6 @@
 [package]
 name = "mintaka-toml"
-version = "0.0.0"
+version = "0.0.5"
 description = "Mintaka Toml"
 repository = "https://github.com/Tribufu/Mintaka"
 authors = ["Tribufu <contact@tribufu.com>"]

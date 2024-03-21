@@ -1,6 +1,6 @@
 [package]
 name = "mintaka-http"
-version = "0.0.0"
+version = "0.0.5"
 description = "Mintaka Http"
 repository = "https://github.com/Tribufu/Mintaka"
 authors = ["Tribufu <contact@tribufu.com>"]
@@ -13,6 +13,6 @@ crate-type = ["rlib"]
 path = "lib.rs"
 
 [dependencies]
-mintaka-config = { path = "../config" }
-mintaka-error = { path = "../error" }
+mintaka-config = { version = "0.0.5", path = "../config" }
+mintaka-error = { version = "0.0.5", path = "../error" }
 serde = { version = "1.0", features = ["derive"] }

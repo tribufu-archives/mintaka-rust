@@ -1,6 +1,6 @@
 [package]
 name = "mintaka-serialization"
-version = "0.0.0"
+version = "0.0.5"
 description = "Mintaka Serialization"
 repository = "https://github.com/Tribufu/Mintaka"
 authors = ["Tribufu <contact@tribufu.com>"]
@@ -23,9 +23,9 @@ xml = ["dep:mintaka-xml"]
 yaml = ["dep:mintaka-yaml"]
 
 [dependencies]
-mintaka-bincode = { path = "./bincode", optional = true }
-mintaka-json = { path = "./json", optional = true }
-mintaka-ron = { path = "./ron", optional = true }
-mintaka-toml = { path = "./toml", optional = true }
-mintaka-xml = { path = "./xml", optional = true }
-mintaka-yaml = { path = "./yaml", optional = true }
+mintaka-bincode = { version = "0.0.5", path = "./bincode", optional = true }
+mintaka-json = { version = "0.0.5", path = "./json", optional = true }
+mintaka-ron = { version = "0.0.5", path = "./ron", optional = true }
+mintaka-toml = { version = "0.0.5", path = "./toml", optional = true }
+mintaka-xml = { version = "0.0.5", path = "./xml", optional = true }
+mintaka-yaml = { version = "0.0.5", path = "./yaml", optional = true }

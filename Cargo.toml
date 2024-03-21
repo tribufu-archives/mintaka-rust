@@ -1,6 +1,6 @@
 [package]
 name = "mintaka"
-version = "0.0.4"
+version = "0.0.5"
 description = "Mintaka Framework"
 repository = "https://github.com/Tribufu/Mintaka"
 authors = ["Tribufu <contact@tribufu.com>"]
@@ -46,14 +46,14 @@ ssl = ["dep:mintaka-ssl"]
 types = ["dep:mintaka-types"]
 
 [dependencies]
-mintaka-config = { path = "src/config", optional = true }
-mintaka-constants = { path = "src/constants", optional = true }
-mintaka-database = { path = "src/database", optional = true }
-mintaka-error = { path = "src/error", optional = true }
-mintaka-http = { path = "src/http", optional = true }
-mintaka-log = { path = "src/log", optional = true }
-mintaka-macros = { path = "src/macros", optional = true }
-mintaka-math = { path = "src/math", optional = true }
-mintaka-serialization = { path = "src/serialization", optional = true }
-mintaka-ssl = { path = "src/ssl", optional = true }
-mintaka-types = { path = "src/types", optional = true }
+mintaka-config = { version = "0.0.5", path = "src/config", optional = true }
+mintaka-constants = { version = "0.0.5", path = "src/constants", optional = true }
+mintaka-database = { version = "0.0.5", path = "src/database", optional = true }
+mintaka-error = { version = "0.0.5", path = "src/error", optional = true }
+mintaka-http = { version = "0.0.5", path = "src/http", optional = true }
+mintaka-log = { version = "0.0.5", path = "src/log", optional = true }
+mintaka-macros = { version = "0.0.5", path = "src/macros", optional = true }
+mintaka-math = { version = "0.0.5", path = "src/math", optional = true }
+mintaka-serialization = { version = "0.0.5", path = "src/serialization", optional = true }
+mintaka-ssl = { version = "0.0.5", path = "src/ssl", optional = true }
+mintaka-types = { version = "0.0.5", path = "src/types", optional = true }

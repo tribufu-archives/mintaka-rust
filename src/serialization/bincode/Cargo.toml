@@ -1,6 +1,6 @@
 [package]
 name = "mintaka-bincode"
-version = "0.0.0"
+version = "0.0.5"
 description = "Mintaka Bincode"
 repository = "https://github.com/Tribufu/Mintaka"
 authors = ["Tribufu <contact@tribufu.com>"]

@@ -1,6 +1,6 @@
 [package]
 name = "mintaka-xml"
-version = "0.0.0"
+version = "0.0.5"
 description = "Mintaka Xml"
 repository = "https://github.com/Tribufu/Mintaka"
 authors = ["Tribufu <contact@tribufu.com>"]
