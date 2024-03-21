@@ -18,9 +18,42 @@ resolver = "2"
 members = ["src/*"]
 exclude = []
 
+[features]
+default = ["all"]
+all = [
+    "config",
+    "constants",
+    "database",
+    "error",
+    "http",
+    "log",
+    "macros",
+    "math",
+    "serialization",
+    "ssl",
+    "types",
+]
+config = ["dep:mintaka-config"]
+constants = ["dep:mintaka-constants"]
+database = ["dep:mintaka-database"]
+error = ["dep:mintaka-error"]
+http = ["dep:mintaka-http"]
+log = ["dep:mintaka-log"]
+macros = ["dep:mintaka-macros"]
+math = ["dep:mintaka-math"]
+serialization = ["dep:mintaka-serialization"]
+ssl = ["dep:mintaka-ssl"]
+types = ["dep:mintaka-types"]
+
 [dependencies]
-mintaka-consts = { version = "0.0.4", path = "./src/consts" }
-mintaka-ffi = { version = "0.0.4", path = "./src/ffi" }
-mintaka-hal = { version = "0.0.4", path = "./src/hal" }
-mintaka-log = { version = "0.0.5", path = "./src/log" }
-mintaka-types = { version = "0.0.4",path = "./src/types" }
+mintaka-config = { path = "src/config", optional = true }
+mintaka-constants = { path = "src/constants", optional = true }
+mintaka-database = { path = "src/database", optional = true }
+mintaka-error = { path = "src/error", optional = true }
+mintaka-http = { path = "src/http", optional = true }
+mintaka-log = { path = "src/log", optional = true }
+mintaka-macros = { path = "src/macros", optional = true }
+mintaka-math = { path = "src/math", optional = true }
+mintaka-serialization = { path = "src/serialization", optional = true }
+mintaka-ssl = { path = "src/ssl", optional = true }
+mintaka-types = { path = "src/types", optional = true }

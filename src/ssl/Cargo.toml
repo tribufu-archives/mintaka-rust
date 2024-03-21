@@ -1,15 +1,18 @@
 [package]
-name = "mintaka-macros"
+name = "mintaka-ssl"
 version = "0.0.0"
-description = "Mintaka Macros"
+description = "Mintaka SSL"
 repository = "https://github.com/Tribufu/Mintaka"
 authors = ["Tribufu <contact@tribufu.com>"]
 edition = "2021"
 publish = false
 
 [lib]
-name = "mintaka_macros"
+name = "mintaka_ssl"
 crate-type = ["rlib"]
 path = "lib.rs"
 
 [dependencies]
+mintaka-error = { path = "../error" }
+rustls = "0.20"
+rustls-pemfile = "1"

@@ -1,15 +1,16 @@
 [package]
-name = "mintaka-macros"
+name = "mintaka-redis"
 version = "0.0.0"
-description = "Mintaka Macros"
+description = "Mintaka Redis"
 repository = "https://github.com/Tribufu/Mintaka"
 authors = ["Tribufu <contact@tribufu.com>"]
 edition = "2021"
 publish = false
 
 [lib]
-name = "mintaka_macros"
+name = "mintaka_redis"
 crate-type = ["rlib"]
 path = "lib.rs"
 
 [dependencies]
+redis = "0.25.2"

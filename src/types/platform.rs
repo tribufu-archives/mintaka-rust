@@ -1,7 +1,7 @@
 // Copyright (c) Tribufu. All Rights Reserved.
 // SPDX-License-Identifier: MIT
 
-use mintaka_consts::TARGET_TRIPLE;
+use mintaka_constants::TARGET_TRIPLE;
 use serde::{Deserialize, Serialize};
 use std::fmt::{Debug, Display, Formatter, Result};
 

@@ -1,0 +1,43 @@
+[package]
+name = "mintaka-mysql"
+version = "0.0.0"
+description = "Mintaka Mysql"
+repository = "https://github.com/Tribufu/Mintaka"
+authors = ["Tribufu <contact@tribufu.com>"]
+edition = "2021"
+publish = false
+
+[lib]
+name = "mintaka_mysql"
+crate-type = ["rlib"]
+path = "lib.rs"
+
+[features]
+default = ["sea-query"]
+sea-query = ["dep:sea-query", "dep:sea-query-binder"]
+
+[dependencies]
+sqlx = { version = "0.7.1", features = [
+    "any",
+    "mysql",
+    "chrono",
+    "json",
+    "macros",
+    "runtime-tokio-rustls",
+    "rust_decimal",
+    "uuid",
+] }
+sea-query = { version = "0.30.3", features = [
+    "with-chrono",
+    "with-json",
+    "with-rust_decimal",
+    "with-uuid",
+], optional = true }
+sea-query-binder = { version = "0.5", features = [
+    "sqlx-any",
+    "sqlx-mysql",
+    "with-chrono",
+    "with-json",
+    "with-rust_decimal",
+    "with-uuid",
+], optional = true }

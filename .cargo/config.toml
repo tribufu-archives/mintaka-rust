@@ -1,14 +1,8 @@
-# Shared
-
 [build]
 rustflags = "--cfg uuid_unstable"
 
-# Windows
-
 [target.'cfg(target_os = "windows")']
 rustflags = ["-C", "target-feature=+crt-static"]
-
-# Web
 
 [target.'cfg(target_family = "wasm")']
 rustflags = ["--cfg", "web_sys_unstable_apis"]

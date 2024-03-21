@@ -1,15 +1,17 @@
 [package]
-name = "mintaka-macros"
+name = "mintaka-toml"
 version = "0.0.0"
-description = "Mintaka Macros"
+description = "Mintaka Toml"
 repository = "https://github.com/Tribufu/Mintaka"
 authors = ["Tribufu <contact@tribufu.com>"]
 edition = "2021"
 publish = false
 
 [lib]
-name = "mintaka_macros"
+name = "mintaka_toml"
 crate-type = ["rlib"]
 path = "lib.rs"
 
 [dependencies]
+serde = { version = "1.0", features = ["derive"] }
+toml = "0.8.0"

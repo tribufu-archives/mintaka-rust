@@ -1,8 +1,6 @@
 // Copyright (c) Tribufu. All Rights Reserved.
 // SPDX-License-Identifier: MIT
 
-#![allow(non_snake_case)]
-
 use chrono::prelude::*;
 pub use env_logger::fmt::Color;
 use env_logger::{Builder, Target};
@@ -18,6 +16,9 @@ use std::io::Write;
 
 pub mod colors;
 
+mod log_config;
+pub use log_config::*;
+
 const MINTAKA_ENV_FILTER: &'static str = "MINTAKA_LOG";
 
 pub fn init() {
@@ -30,15 +31,30 @@ pub fn init_level(level: LogLevel) {
     logger.init();
 }
 
-#[derive(Debug, Copy, Clone, Serialize, Deserialize)]
+#[derive(Default, Debug, Copy, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "lowercase")]
 pub enum LogLevel {
+    #[default]
     Off,
     Error,
     Warn,
     Info,
     Debug,
     Trace,
+}
+
+impl LogLevel {
+    pub fn from_str(s: &str) -> Option<Self> {
+        match s {
+            "off" => Some(Self::Off),
+            "error" => Some(Self::Error),
+            "warn" => Some(Self::Warn),
+            "info" => Some(Self::Info),
+            "debug" => Some(Self::Debug),
+            "trace" => Some(Self::Trace),
+            _ => None,
+        }
+    }
 }
 
 impl From<LogLevel> for LevelFilter {
@@ -62,6 +78,12 @@ impl Logger {
     pub fn new(level: LevelFilter) -> Self {
         let mut builder = Builder::new();
         builder.filter_level(level);
+        Self { builder }
+    }
+
+    pub fn with_config(config: LogConfig) -> Self {
+        let mut builder = Builder::new();
+        builder.filter_level(config.level.into());
         Self { builder }
     }
 

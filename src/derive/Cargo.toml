@@ -1,0 +1,18 @@
+[package]
+name = "mintaka-derive"
+version = "0.0.0"
+description = "Mintaka Derive"
+repository = "https://github.com/Tribufu/Mintaka"
+authors = ["Tribufu <contact@Tribufu.com>"]
+edition = "2021"
+publish = false
+
+[lib]
+name = "mintaka_derive"
+proc-macro = true
+path = "lib.rs"
+
+[dependencies]
+proc-macro2 = "1.0.79"
+quote = "1.0.35"
+syn = "2.0.53"

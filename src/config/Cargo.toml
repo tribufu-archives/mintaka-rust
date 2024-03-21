@@ -1,20 +1,19 @@
 [package]
-name = "mintaka-log"
+name = "mintaka-config"
 version = "0.0.0"
-description = "Mintaka Log"
+description = "Mintaka Config"
 repository = "https://github.com/Tribufu/Mintaka"
 authors = ["Tribufu <contact@tribufu.com>"]
 edition = "2021"
 publish = false
 
 [lib]
-name = "mintaka_log"
+name = "mintaka_config"
 crate-type = ["rlib"]
 path = "lib.rs"
 
 [dependencies]
+mintaka-toml = { path = "../serialization/toml" }
+mintaka-derive = { path = "../derive" }
 mintaka-error = { path = "../error" }
-chrono = "0.4.23"
-env_logger = "0.10.1"
-log = "0.4"
 serde = { version = "1.0", features = ["derive"] }

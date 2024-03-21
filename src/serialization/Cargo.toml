@@ -1,0 +1,31 @@
+[package]
+name = "mintaka-serialization"
+version = "0.0.0"
+description = "Mintaka Serialization"
+repository = "https://github.com/Tribufu/Mintaka"
+authors = ["Tribufu <contact@tribufu.com>"]
+edition = "2021"
+publish = false
+
+[lib]
+name = "mintaka_serialization"
+crate-type = ["rlib"]
+path = "lib.rs"
+
+[features]
+default = ["all"]
+all = ["bincode", "json", "ron", "toml", "xml", "yaml"]
+bincode = ["dep:mintaka-bincode"]
+json = ["dep:mintaka-json"]
+ron = ["dep:mintaka-ron"]
+toml = ["dep:mintaka-toml"]
+xml = ["dep:mintaka-xml"]
+yaml = ["dep:mintaka-yaml"]
+
+[dependencies]
+mintaka-bincode = { path = "./bincode", optional = true }
+mintaka-json = { path = "./json", optional = true }
+mintaka-ron = { path = "./ron", optional = true }
+mintaka-toml = { path = "./toml", optional = true }
+mintaka-xml = { path = "./xml", optional = true }
+mintaka-yaml = { path = "./yaml", optional = true }

@@ -1,6 +1,6 @@
 #!/usr/bin/env pwsh
 
-git submodule update --recursive
+git submodule update --init --recursive
 
 if ($IsWindows)
 {

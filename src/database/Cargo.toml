@@ -1,24 +1,36 @@
 [package]
 name = "mintaka-database"
-version = "0.0.4"
+version = "0.0.0"
 description = "Mintaka Database"
 repository = "https://github.com/Tribufu/Mintaka"
 authors = ["Tribufu <contact@tribufu.com>"]
-license = "MIT"
 edition = "2021"
-publish = true
+publish = false
 
 [lib]
 name = "mintaka_database"
 crate-type = ["rlib"]
 path = "lib.rs"
 
+[features]
+default = ["all", "sea-query"]
+all = ["mysql", "postgres", "redis", "sqlite"]
+mysql = ["dep:mintaka-mysql"]
+postgres = ["dep:mintaka-postgres"]
+redis = ["dep:mintaka-redis"]
+sqlite = ["dep:mintaka-sqlite"]
+sea-query = [
+    "dep:sea-query",
+    "dep:sea-query-binder",
+    "mintaka-mysql/sea-query",
+    "mintaka-postgres/sea-query",
+    "mintaka-sqlite/sea-query",
+]
+
 [dependencies]
-async-trait = "0.1.74"
-derive_more = {version = "0.99.17", features = ["from"] }
+mintaka-config = { path = "../config" }
+mintaka-error = { path = "../error" }
 serde = { version = "1.0", features = ["derive"] }
-serde_with = "3"
-strum_macros = "0.25"
 sqlx = { version = "0.7.1", features = [
     "all-databases",
     "chrono",
@@ -33,15 +45,19 @@ sea-query = { version = "0.30.3", features = [
     "with-json",
     "with-rust_decimal",
     "with-uuid",
-] }
+], optional = true }
 sea-query-binder = { version = "0.5", features = [
     "sqlx-any",
     "sqlx-mysql",
-    "sqlx-postgres",
     "sqlx-postgres",
     "sqlx-sqlite",
     "with-chrono",
     "with-json",
     "with-rust_decimal",
     "with-uuid",
-] }
+], optional = true }
+
+mintaka-mysql = { path = "./mysql", optional = true }
+mintaka-postgres = { path = "./postgres", optional = true }
+mintaka-redis = { path = "./redis", optional = true }
+mintaka-sqlite = { path = "./sqlite", optional = true }
