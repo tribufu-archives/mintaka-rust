@@ -25,6 +25,7 @@ all = [
     "constants",
     "database",
     "error",
+    "fs",
     "http",
     "log",
     "macros",
@@ -37,6 +38,7 @@ config = ["dep:mintaka-config"]
 constants = ["dep:mintaka-constants"]
 database = ["dep:mintaka-database"]
 error = ["dep:mintaka-error"]
+fs = ["dep:mintaka-fs"]
 http = ["dep:mintaka-http"]
 log = ["dep:mintaka-log"]
 macros = ["dep:mintaka-macros"]
@@ -50,6 +52,7 @@ mintaka-config = { version = "0.0.5", path = "src/config", optional = true }
 mintaka-constants = { version = "0.0.5", path = "src/constants", optional = true }
 mintaka-database = { version = "0.0.5", path = "src/database", optional = true }
 mintaka-error = { version = "0.0.5", path = "src/error", optional = true }
+mintaka-fs = { version = "0.0.5", path = "src/fs", optional = true }
 mintaka-http = { version = "0.0.5", path = "src/http", optional = true }
 mintaka-log = { version = "0.0.5", path = "src/log", optional = true }
 mintaka-macros = { version = "0.0.5", path = "src/macros", optional = true }
