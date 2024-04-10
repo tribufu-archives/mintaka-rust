@@ -10,7 +10,6 @@ pub use mintaka_error as error;
 pub use mintaka_http as http;
 pub use mintaka_log as log;
 pub use mintaka_macros as macros;
-pub use mintaka_math as math;
 pub use mintaka_serialization as serialization;
 pub use mintaka_ssl as ssl;
 pub use mintaka_types as types;

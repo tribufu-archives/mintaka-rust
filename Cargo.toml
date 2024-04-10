@@ -29,7 +29,6 @@ all = [
     "http",
     "log",
     "macros",
-    "math",
     "serialization",
     "ssl",
     "types",
@@ -42,7 +41,6 @@ fs = ["dep:mintaka-fs"]
 http = ["dep:mintaka-http"]
 log = ["dep:mintaka-log"]
 macros = ["dep:mintaka-macros"]
-math = ["dep:mintaka-math"]
 serialization = ["dep:mintaka-serialization"]
 ssl = ["dep:mintaka-ssl"]
 types = ["dep:mintaka-types"]
@@ -56,7 +54,6 @@ mintaka-fs = { version = "0.0.5", path = "src/fs", optional = true }
 mintaka-http = { version = "0.0.5", path = "src/http", optional = true }
 mintaka-log = { version = "0.0.5", path = "src/log", optional = true }
 mintaka-macros = { version = "0.0.5", path = "src/macros", optional = true }
-mintaka-math = { version = "0.0.5", path = "src/math", optional = true }
 mintaka-serialization = { version = "0.0.5", path = "src/serialization", optional = true }
 mintaka-ssl = { version = "0.0.5", path = "src/ssl", optional = true }
 mintaka-types = { version = "0.0.5", path = "src/types", optional = true }
